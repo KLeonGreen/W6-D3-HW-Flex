@@ -6,18 +6,19 @@ body {
 }
 .main-container {
   display: flex;
+  flex-direction: column;
 }
 
 .container {
-  height: 100vh;
+  height: 85vh;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-grow: 1.5;
 }
 
 header {
   background-color: rgb(0, 0, 36);
-  flex-grow: 1.5;
+  height: 15vh;
   padding: 1%;
 }
 .middle-section {
@@ -32,7 +33,8 @@ footer {
 
 .article {
   background-color: white;
-  flex-grow: 6;
+  /* flex-grow: 6; */
+  flex-basis: 70%;
   padding: 1%;
   color: black;
 }
@@ -57,6 +59,10 @@ footer {
     flex-grow: 0;
   }
 
+  .article {
+    flex-basis: 76%;
+  }
+
   .nav,
   .article,
   .aside,
@@ -68,6 +74,12 @@ footer {
   .aside {
     display: flex;
     align-items: center;
-    flex-basis: 6%;
+    flex-basis: 4%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
   }
 }
