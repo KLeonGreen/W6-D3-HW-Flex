@@ -1,0 +1,44 @@
+html,
+body {
+  margin: 0;
+  padding: 10px;
+  font-family: avenir;
+  color: white;
+  font-weight: 700;
+  font-size: 1.5em;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.first {
+  background-color: blueviolet;
+  height: 100vh;
+  flex-grow: 1;
+  border-radius: 10px;
+  padding: 20px;
+}
+.second {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex-grow: 1;
+}
+
+.two,
+.three {
+  background-color: blueviolet;
+  flex-grow: 5;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.last {
+  background-color: blueviolet;
+  flex-grow: 2;
+  border-radius: 10px;
+  padding: 20px;
+}
